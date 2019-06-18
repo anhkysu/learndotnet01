@@ -66,5 +66,77 @@ namespace Learn_Winform
         {
             toolTip2.SetToolTip(textBox2, folderBrowserDialog2.SelectedPath);
         }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            string fileName = "test.txt";
+            string sourcePath = $@"{textBox1.Text}";
+            string targetPath = $@"{textBox2.Text}";
+
+            string sourceFile = System.IO.Path.Combine(sourcePath, fileName);
+            string destFile = System.IO.Path.Combine(targetPath, fileName);
+
+            System.IO.Directory.CreateDirectory(targetPath);
+
+            
+
+            if (System.IO.Directory.Exists(sourcePath))
+            {
+                string[] files = System.IO.Directory.GetFiles(sourcePath);
+
+
+                foreach (string s in files)
+                {
+
+                    fileName = System.IO.Path.GetFileName(s);
+                    destFile = System.IO.Path.Combine(targetPath, fileName);
+                    System.IO.File.Copy(s, destFile, true);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Source path does not exist!");
+            }
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+
+            if (!System.IO.Directory.Exists(@"C:\Users\Public\TestFolder\"))
+            {
+                System.IO.Directory.CreateDirectory(@"C:\Users\Public\TestFolder\");
+            }
+
+            System.IO.Directory.SetCurrentDirectory(@"C:\Users\Public\TestFolder\");
+
+            string currentDirName = System.IO.Directory.GetCurrentDirectory();
+
+            string[] files = System.IO.Directory.GetFiles(currentDirName, "*.txt");
+
+            foreach (string s in files)
+            {
+                // Create the FileInfo object only when needed to ensure
+                // the information is as current as possible.
+                System.IO.FileInfo fi = null;
+                try
+                {
+                    fi = new System.IO.FileInfo(s);
+                }
+                catch (System.IO.FileNotFoundException errors)
+                {
+                    // To inform the user and continue is
+                    // sufficient for this demonstration.
+                    // Your application may require different behavior.
+                    Console.WriteLine(errors.Message);
+                    continue;
+                }
+                Console.WriteLine("{0} : {1} : {2}", fi.Name, fi.Directory, fi.Length);
+            }
+        }
     }
 }
