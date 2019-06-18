@@ -1,0 +1,10 @@
+C:\Users\Khanh Trinh\source\repos\Learn_Winform\Learn_Winform\bin\Debug\Learn_Winform.exe.config
+C:\Users\Khanh Trinh\source\repos\Learn_Winform\Learn_Winform\bin\Debug\Learn_Winform.exe
+C:\Users\Khanh Trinh\source\repos\Learn_Winform\Learn_Winform\bin\Debug\Learn_Winform.pdb
+C:\Users\Khanh Trinh\source\repos\Learn_Winform\Learn_Winform\obj\Debug\Learn_Winform.csprojAssemblyReference.cache
+C:\Users\Khanh Trinh\source\repos\Learn_Winform\Learn_Winform\obj\Debug\Learn_Winform.Form1.resources
+C:\Users\Khanh Trinh\source\repos\Learn_Winform\Learn_Winform\obj\Debug\Learn_Winform.Properties.Resources.resources
+C:\Users\Khanh Trinh\source\repos\Learn_Winform\Learn_Winform\obj\Debug\Learn_Winform.csproj.GenerateResource.cache
+C:\Users\Khanh Trinh\source\repos\Learn_Winform\Learn_Winform\obj\Debug\Learn_Winform.csproj.CoreCompileInputs.cache
+C:\Users\Khanh Trinh\source\repos\Learn_Winform\Learn_Winform\obj\Debug\Learn_Winform.exe
+C:\Users\Khanh Trinh\source\repos\Learn_Winform\Learn_Winform\obj\Debug\Learn_Winform.pdb
